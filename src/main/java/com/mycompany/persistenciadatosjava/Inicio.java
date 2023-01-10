@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.persistenciadatosjava;
 
 import java.sql.Connection;
@@ -24,8 +20,8 @@ public class Inicio {
             System.out.println("Aplicacion de mensajes");
             System.out.println("1. Crear mensaje");
             System.out.println("2. Listar mensajes");
-            System.out.println("3. Editar mensaje");
-            System.out.println("4. Eliminar mensaje");
+            System.out.println("3. Eliminar mensaje");
+            System.out.println("4. Editar mensaje");
             System.out.println("5. Salir");
             //Leemos la opcion del usuario
             opcion = leer.nextInt();

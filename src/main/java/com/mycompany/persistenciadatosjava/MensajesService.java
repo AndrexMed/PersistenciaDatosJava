@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.persistenciadatosjava;
 
 import java.util.Scanner;
@@ -14,10 +10,10 @@ public class MensajesService {
     
     public static void crearMensaje(){
         Scanner leer = new Scanner(System.in);
-        System.out.println("Escribe tu mensaje");
+        System.out.println("***** Escribe tu mensaje *****");
         String mensaje = leer.nextLine();
         
-        System.out.println("Author");
+        System.out.println("***** Author *****");
         String nombre = leer.nextLine();
         
         Mensajes registro = new Mensajes();
@@ -31,7 +27,11 @@ public class MensajesService {
     }
     
     public static void borrarMensaje(){
-        
+        Scanner leer = new Scanner(System.in);
+        System.out.println("***** Indica el -ID- del mensaje a borrar *****");
+                int id_mensaje = leer.nextInt();
+                
+                MensajesDAO.borrarMensajeDB(id_mensaje);
     }
     
     public static void editarMensaje(){
